@@ -1,0 +1,33 @@
+usage: cli.py [-h] [--cookies-json COOKIES_JSON] [--proxy PROXY]
+              [--account-index ACCOUNT_INDEX] [--model MODEL] [--verbose]
+              [--no-persist] [--request-timeout REQUEST_TIMEOUT]
+              [--skip-verify]
+              {ask,reply,research,list,read,models,download,inspect} ...
+
+CLI for gemini-webapi
+
+positional arguments:
+  {ask,reply,research,list,read,models,download,inspect}
+    ask                 Single-turn question
+    reply               Continue chat
+    research            Deep research
+    list                List chats
+    read                Read chat
+    models              List the models available to this account
+    download            Download image
+    inspect             Account probe
+
+options:
+  -h, --help            show this help message and exit
+  --cookies-json COOKIES_JSON
+                        Path to JSON cookie file
+  --proxy PROXY
+  --account-index ACCOUNT_INDEX
+                        Google account index
+  --model MODEL         Model name, alias or id (see the 'models' command).
+                        Defaults to the account's default
+  --verbose             Enable debug logging
+  --no-persist          Do not write updated cookies back
+  --request-timeout REQUEST_TIMEOUT
+                        Per-request HTTP timeout in seconds
+  --skip-verify         Skip SSL certificate verification

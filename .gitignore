@@ -207,3 +207,11 @@ temp/
 # Cookies and credentials
 cookies.json
 *.cookies
+
+# Ruff
+.ruff_cache/
+
+# Rust
+target/
+*.rs.bak
+.rust-anything/

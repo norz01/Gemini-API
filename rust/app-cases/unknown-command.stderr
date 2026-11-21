@@ -1,0 +1,6 @@
+usage: cli.py [-h] [--cookies-json COOKIES_JSON] [--proxy PROXY]
+              [--account-index ACCOUNT_INDEX] [--model MODEL] [--verbose]
+              [--no-persist] [--request-timeout REQUEST_TIMEOUT]
+              [--skip-verify]
+              {ask,reply,research,list,read,models,download,inspect} ...
+cli.py: error: argument command: invalid choice: 'frobnicate' (choose from 'ask', 'reply', 'research', 'list', 'read', 'models', 'download', 'inspect')

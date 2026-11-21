@@ -1,0 +1,228 @@
+{
+  "schema": "rust-anything/bridge@1",
+  "root": "/home/norz/projek/rust/Gemini-API",
+  "unit": "cli.py",
+  "language": "python",
+  "kind": "pyo3",
+  "crate_name": "cli-rs",
+  "exports": [
+    {
+      "name": "cmd_ask",
+      "file": "cli.py",
+      "line": 238,
+      "params": [
+        {
+          "name": "args",
+          "ts_type": "unknown",
+          "optional": false,
+          "rest": false
+        }
+      ],
+      "returns": "unknown",
+      "is_async": true,
+      "is_generator": false,
+      "type_params": [],
+      "uses_instanceof": false
+    },
+    {
+      "name": "cmd_reply",
+      "file": "cli.py",
+      "line": 270,
+      "params": [
+        {
+          "name": "args",
+          "ts_type": "unknown",
+          "optional": false,
+          "rest": false
+        }
+      ],
+      "returns": "unknown",
+      "is_async": true,
+      "is_generator": false,
+      "type_params": [],
+      "uses_instanceof": false
+    },
+    {
+      "name": "cmd_research_send",
+      "file": "cli.py",
+      "line": 306,
+      "params": [
+        {
+          "name": "args",
+          "ts_type": "unknown",
+          "optional": false,
+          "rest": false
+        }
+      ],
+      "returns": "unknown",
+      "is_async": true,
+      "is_generator": false,
+      "type_params": [],
+      "uses_instanceof": false
+    },
+    {
+      "name": "cmd_research_check",
+      "file": "cli.py",
+      "line": 337,
+      "params": [
+        {
+          "name": "args",
+          "ts_type": "unknown",
+          "optional": false,
+          "rest": false
+        }
+      ],
+      "returns": "unknown",
+      "is_async": true,
+      "is_generator": false,
+      "type_params": [],
+      "uses_instanceof": false
+    },
+    {
+      "name": "cmd_research_get",
+      "file": "cli.py",
+      "line": 364,
+      "params": [
+        {
+          "name": "args",
+          "ts_type": "unknown",
+          "optional": false,
+          "rest": false
+        }
+      ],
+      "returns": "unknown",
+      "is_async": true,
+      "is_generator": false,
+      "type_params": [],
+      "uses_instanceof": false
+    },
+    {
+      "name": "cmd_models",
+      "file": "cli.py",
+      "line": 385,
+      "params": [
+        {
+          "name": "args",
+          "ts_type": "unknown",
+          "optional": false,
+          "rest": false
+        }
+      ],
+      "returns": "unknown",
+      "is_async": true,
+      "is_generator": false,
+      "type_params": [],
+      "uses_instanceof": false
+    },
+    {
+      "name": "cmd_list",
+      "file": "cli.py",
+      "line": 406,
+      "params": [
+        {
+          "name": "args",
+          "ts_type": "unknown",
+          "optional": false,
+          "rest": false
+        }
+      ],
+      "returns": "unknown",
+      "is_async": true,
+      "is_generator": false,
+      "type_params": [],
+      "uses_instanceof": false
+    },
+    {
+      "name": "cmd_read",
+      "file": "cli.py",
+      "line": 426,
+      "params": [
+        {
+          "name": "args",
+          "ts_type": "unknown",
+          "optional": false,
+          "rest": false
+        }
+      ],
+      "returns": "unknown",
+      "is_async": true,
+      "is_generator": false,
+      "type_params": [],
+      "uses_instanceof": false
+    },
+    {
+      "name": "cmd_download",
+      "file": "cli.py",
+      "line": 454,
+      "params": [
+        {
+          "name": "args",
+          "ts_type": "unknown",
+          "optional": false,
+          "rest": false
+        }
+      ],
+      "returns": "unknown",
+      "is_async": true,
+      "is_generator": false,
+      "type_params": [],
+      "uses_instanceof": false
+    },
+    {
+      "name": "cmd_inspect",
+      "file": "cli.py",
+      "line": 500,
+      "params": [
+        {
+          "name": "args",
+          "ts_type": "unknown",
+          "optional": false,
+          "rest": false
+        }
+      ],
+      "returns": "unknown",
+      "is_async": true,
+      "is_generator": false,
+      "type_params": [],
+      "uses_instanceof": false
+    },
+    {
+      "name": "build_parser",
+      "file": "cli.py",
+      "line": 563,
+      "params": [],
+      "returns": "unknown",
+      "is_async": false,
+      "is_generator": false,
+      "type_params": [],
+      "uses_instanceof": false
+    },
+    {
+      "name": "run",
+      "file": "cli.py",
+      "line": 667,
+      "params": [
+        {
+          "name": "args",
+          "ts_type": "unknown",
+          "optional": false,
+          "rest": false
+        }
+      ],
+      "returns": "unknown",
+      "is_async": true,
+      "is_generator": false,
+      "type_params": [],
+      "uses_instanceof": false
+    }
+  ],
+  "classes": [],
+  "js_only": [
+    {
+      "name": "main",
+      "file": "cli.py",
+      "line": 695,
+      "reason": "a command-line entry point: it stays in Python, and `app front-door` takes the command line over when the whole app moves"
+    }
+  ]
+}

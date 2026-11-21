@@ -1,0 +1,5 @@
+bin.name = "cli"
+args = ["--cookies-json", "cookies.json", "--no-persist", "ask", "hi"]
+status.code = 1
+fs.sandbox = true
+fs.base = "missing-psid.in"

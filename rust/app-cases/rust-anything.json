@@ -1,0 +1,9 @@
+{
+  "schema": "rust-anything/app-cases@1",
+  "name": "cli",
+  "run": [
+    "python3",
+    "cli.py"
+  ],
+  "timeout_secs": 30
+}
