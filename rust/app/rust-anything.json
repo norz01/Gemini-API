@@ -11,6 +11,24 @@
         "cli"
       ],
       "switch": "RUST_ANYTHING_UNIT_GEMINI_WEBAPI"
+    },
+    {
+      "name": "cli",
+      "crate": "cli-rs",
+      "path": "../cli-rs",
+      "commands": [
+        "ask",
+        "models",
+        "list",
+        "read",
+        "reply",
+        "download",
+        "inspect",
+        "research_send",
+        "research_check",
+        "research_get"
+      ],
+      "switch": "RUST_ANYTHING_UNIT_CLI"
     }
   ]
 }
