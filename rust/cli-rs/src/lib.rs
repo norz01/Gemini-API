@@ -216,5 +216,23 @@ fn run(py: Python<'_>, args: Bound<'_, PyAny>) -> PyResult<Py<PyAny>> {
         .and_then(|v| crate::pyconv::ToPy::to_py(&v, py))
 }
 
-// cli-rs is used as a library dependency, not as a Python extension module,
-// so no #[pymodule] is needed (would conflict with gemini-webapi-rs's _native module).
+/// cli-rs is used as a library dependency by rust/app, but also exposes a Python
+/// extension module so rust-anything gate/diff can verify it. Uses a unique module
+/// name to avoid clashing with gemini-webapi-rs's _native module.
+#[pymodule]
+#[pyo3(name = "cli_native")]
+fn native_module(m: &Bound<'_, PyModule>) -> PyResult<()> {
+    m.add_function(wrap_pyfunction!(cmd_ask, m)?)?;
+    m.add_function(wrap_pyfunction!(cmd_reply, m)?)?;
+    m.add_function(wrap_pyfunction!(cmd_research_send, m)?)?;
+    m.add_function(wrap_pyfunction!(cmd_research_check, m)?)?;
+    m.add_function(wrap_pyfunction!(cmd_research_get, m)?)?;
+    m.add_function(wrap_pyfunction!(cmd_models, m)?)?;
+    m.add_function(wrap_pyfunction!(cmd_list, m)?)?;
+    m.add_function(wrap_pyfunction!(cmd_read, m)?)?;
+    m.add_function(wrap_pyfunction!(cmd_download, m)?)?;
+    m.add_function(wrap_pyfunction!(cmd_inspect, m)?)?;
+    m.add_function(wrap_pyfunction!(build_parser, m)?)?;
+    m.add_function(wrap_pyfunction!(run, m)?)?;
+    Ok(())
+}
