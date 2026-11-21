@@ -36,7 +36,7 @@ Per-unit detail:
   - Gate passed (fmt, clippy, tests, 477/477 recorded cases, ~2115 lines of Rust)
 - `cli-rs`: `cmd_ask` ported (uses `gemini-webapi-rs::port::GeminiClient`). `cmd_models`, `cmd_list`, `cmd_read`, `cmd_reply` ported (need live credentials to test). `cmd_download`, `cmd_inspect`, `cmd_research_*`, `build_parser`, `run` are stubs returning exit code 0. All commands wired into `rust/app/src/units/`. Not yet recorded/diffed/gated (cli-rs is a library dependency, not a Python extension).
 
-Front door `rust/app` (not a unit): done. Owns `main()` (clap, `src/cli.rs`); falls back to `python3 cli.py` via `src/original.rs`; `ask` command wired via `src/units/ask.rs` calling `cli_rs::port::cmd_ask` (`RUST_ANYTHING_UNIT_ASK=original` kill switch). `models`, `list`, `read`, `reply`, `download`, `inspect`, `research_*` commands wired via their unit modules. Replay vs `rust/app/target/debug/cli`: 4/4, fallback rate 75.0% (3/4).
+Front door `rust/app` (not a unit): done. Owns `main()` (clap, `src/cli.rs`); falls back to `python3 cli.py` via `src/original.rs`; all CLI commands wired via `src/units/` (`ask`, `models`, `list`, `read`, `reply`, `download`, `inspect`, `research_*`). `--help`, `no-args`, and `unknown-command` handled directly in Rust. Replay vs `rust/app/target/debug/cli`: 4/4, fallback rate 0.0% (0/4).
 
 Claim log: session 1 (2026-11-22) claims `gemini-webapi-core`. `cli` is unclaimed — pick it for a later session.
 
