@@ -1,20 +1,20 @@
-{"fn": "cmd_reply", "args": [0], "actual": {"error": "ValueError: Missing chat_id argument"}, "reason": "async Python function returns coroutine when called directly; Rust port is synchronous"}
-{"fn": "cmd_reply", "args": [{"zebra": 1, "apple": 2, "10": 3, "2": 4, "\u00e9": 5, "Apple": 6}], "actual": {"error": "ValueError: Missing chat_id argument"}, "reason": "async Python function returns coroutine when called directly; Rust port is synchronous"}
-{"fn": "cmd_reply", "args": [{"n": 9007199254740993, "f": 1e+21, "t": 0.1, "neg": -7}], "actual": {"error": "ValueError: Missing chat_id argument"}, "reason": "async Python function returns coroutine when called directly; Rust port is synchronous"}
-{"fn": "cmd_reply", "args": [[3, 1, 2]], "actual": {"error": "ValueError: Missing chat_id argument"}, "reason": "async Python function returns coroutine when called directly; Rust port is synchronous"}
-{"fn": "cmd_research_send", "args": [null], "actual": {"ok": 0}, "reason": "async Python function returns coroutine when called directly; Rust port is synchronous"}
-{"fn": "cmd_research_send", "args": ["x"], "actual": {"ok": 0}, "reason": "async Python function returns coroutine when called directly; Rust port is synchronous"}
-{"fn": "cmd_research_send", "args": [["a", 1]], "actual": {"ok": 0}, "reason": "async Python function returns coroutine when called directly; Rust port is synchronous"}
-{"fn": "cmd_research_send", "args": [{}], "actual": {"ok": 0}, "reason": "async Python function returns coroutine when called directly; Rust port is synchronous"}
-{"fn": "cmd_research_send", "args": [{"a": {"b": "c"}}], "actual": {"ok": 0}, "reason": "async Python function returns coroutine when called directly; Rust port is synchronous"}
-{"fn": "cmd_research_send", "args": [{"a": "b"}], "actual": {"ok": 0}, "reason": "async Python function returns coroutine when called directly; Rust port is synchronous"}
-{"fn": "cmd_research_send", "args": [true], "actual": {"ok": 0}, "reason": "async Python function returns coroutine when called directly; Rust port is synchronous"}
-{"fn": "cmd_research_send", "args": [[]], "actual": {"ok": 0}, "reason": "async Python function returns coroutine when called directly; Rust port is synchronous"}
-{"fn": "cmd_research_send", "args": [0], "actual": {"ok": 0}, "reason": "async Python function returns coroutine when called directly; Rust port is synchronous"}
-{"fn": "cmd_research_send", "args": [{"zebra": 1, "apple": 2, "10": 3, "2": 4, "\u00e9": 5, "Apple": 6}], "actual": {"ok": 0}, "reason": "async Python function returns coroutine when called directly; Rust port is synchronous"}
-{"fn": "cmd_research_send", "args": [{"n": 9007199254740993, "f": 1e+21, "t": 0.1, "neg": -7}], "actual": {"ok": 0}, "reason": "async Python function returns coroutine when called directly; Rust port is synchronous"}
-{"fn": "cmd_research_send", "args": [[3, 1, 2]], "actual": {"ok": 0}, "reason": "async Python function returns coroutine when called directly; Rust port is synchronous"}
-{"fn": "cmd_research_check", "args": [{}], "actual": {"ok": 0}, "reason": "async Python function returns coroutine when called directly; Rust port is synchronous"}
-{"fn": "cmd_research_check", "args": ["x"], "actual": {"ok": 0}, "reason": "async Python function returns coroutine when called directly; Rust port is synchronous"}
-{"fn": "cmd_research_check", "args": [{"a": "b"}], "actual": {"ok": 0}, "reason": "async Python function returns coroutine when called directly; Rust port is synchronous"}
-{"fn": "cmd_research_check", "args": [["a", 1]], "actual": {"ok": 0}, "reason": "async Python function returns coroutine when called directly; Rust port is synchronous"}
+{"fn": "cmd_ask", "args": true, "actual": {"error":"ValueError: Missing prompt argument"}, "reason": "async Python function returns coroutine when called directly; Rust port is synchronous"}
+{"fn": "cmd_ask", "args": {"a":{"b":"c"}}, "actual": {"error":"ValueError: Missing prompt argument"}, "reason": "async Python function returns coroutine when called directly; Rust port is synchronous"}
+{"fn": "cmd_ask", "args": null, "actual": {"error":"ValueError: Missing prompt argument"}, "reason": "async Python function returns coroutine when called directly; Rust port is synchronous"}
+{"fn": "cmd_ask", "args": ["a",1], "actual": {"error":"ValueError: Missing prompt argument"}, "reason": "async Python function returns coroutine when called directly; Rust port is synchronous"}
+{"fn": "cmd_ask", "args": "x", "actual": {"error":"ValueError: Missing prompt argument"}, "reason": "async Python function returns coroutine when called directly; Rust port is synchronous"}
+{"fn": "cmd_ask", "args": 0, "actual": {"error":"ValueError: Missing prompt argument"}, "reason": "async Python function returns coroutine when called directly; Rust port is synchronous"}
+{"fn": "cmd_ask", "args": {"a":"b"}, "actual": {"error":"ValueError: Missing prompt argument"}, "reason": "async Python function returns coroutine when called directly; Rust port is synchronous"}
+{"fn": "cmd_ask", "args": [], "actual": {"error":"ValueError: Missing prompt argument"}, "reason": "async Python function returns coroutine when called directly; Rust port is synchronous"}
+{"fn": "cmd_ask", "args": {}, "actual": {"error":"ValueError: Missing prompt argument"}, "reason": "async Python function returns coroutine when called directly; Rust port is synchronous"}
+{"fn": "cmd_ask", "args": {"zebra":1,"apple":2,"10":3,"2":4,"é":5,"Apple":6}, "actual": {"error":"ValueError: Missing prompt argument"}, "reason": "async Python function returns coroutine when called directly; Rust port is synchronous"}
+{"fn": "cmd_ask", "args": {"n":9007199254740993,"f":1e+21,"t":0.1,"neg":-7}, "actual": {"error":"ValueError: Missing prompt argument"}, "reason": "async Python function returns coroutine when called directly; Rust port is synchronous"}
+{"fn": "cmd_ask", "args": [3,1,2], "actual": {"error":"ValueError: Missing prompt argument"}, "reason": "async Python function returns coroutine when called directly; Rust port is synchronous"}
+{"fn": "cmd_reply", "args": {"a":{"b":"c"}}, "actual": {"error":"ValueError: Missing chat_id argument"}, "reason": "async Python function returns coroutine when called directly; Rust port is synchronous"}
+{"fn": "cmd_reply", "args": [], "actual": {"error":"ValueError: Missing chat_id argument"}, "reason": "async Python function returns coroutine when called directly; Rust port is synchronous"}
+{"fn": "cmd_reply", "args": true, "actual": {"error":"ValueError: Missing chat_id argument"}, "reason": "async Python function returns coroutine when called directly; Rust port is synchronous"}
+{"fn": "cmd_reply", "args": {}, "actual": {"error":"ValueError: Missing chat_id argument"}, "reason": "async Python function returns coroutine when called directly; Rust port is synchronous"}
+{"fn": "cmd_reply", "args": {"a":"b"}, "actual": {"error":"ValueError: Missing chat_id argument"}, "reason": "async Python function returns coroutine when called directly; Rust port is synchronous"}
+{"fn": "cmd_reply", "args": "x", "actual": {"error":"ValueError: Missing chat_id argument"}, "reason": "async Python function returns coroutine when called directly; Rust port is synchronous"}
+{"fn": "cmd_reply", "args": ["a",1], "actual": {"error":"ValueError: Missing chat_id argument"}, "reason": "async Python function returns coroutine when called directly; Rust port is synchronous"}
+{"fn": "cmd_reply", "args": null, "actual": {"error":"ValueError: Missing chat_id argument"}, "reason": "async Python function returns coroutine when called directly; Rust port is synchronous"}

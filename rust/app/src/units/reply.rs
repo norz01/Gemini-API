@@ -1,4 +1,4 @@
-//! Glue from the front door to `cli-rs::port::cmd_reply`.
+//! Glue from the front door to `crate::port::cmd_reply`.
 
 use std::ffi::OsString;
 use std::process::ExitCode;
@@ -50,14 +50,8 @@ pub fn run(_command: &str, matches: &ArgMatches) -> ExitCode {
 
     let args_value = serde_json::Value::Object(json_args);
 
-    match cli_rs::port::cmd_reply(args_value) {
-        Ok(code) => {
-            if let serde_json::Value::Number(n) = code {
-                ExitCode::from(n.as_u64().unwrap_or(0) as u8)
-            } else {
-                ExitCode::from(0)
-            }
-        }
+    match crate::port::cmd_reply(args_value) {
+        Ok(code) => crate::port::exit_code_from_value(&code),
         Err(e) => {
             eprintln!("front door: reply failed: {e}");
             ExitCode::from(1)

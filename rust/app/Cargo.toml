@@ -12,7 +12,9 @@ path = "src/main.rs"
 [dependencies]
 clap = "4"
 gemini-webapi-rs = { path = "../gemini-webapi-rs" }
-cli-rs = { path = "../cli-rs" }
 serde_json = "1"
+chrono = "0.4"
+tokio = { version = "1", features = ["rt-multi-thread", "macros"] }
+futures = "0.3"
 
 [workspace]
