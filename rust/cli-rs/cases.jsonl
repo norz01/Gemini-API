@@ -1,0 +1,132 @@
+{"fn": "cmd_ask", "args": [true], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_ask", "args": [{"a": {"b": "c"}}], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_ask", "args": [null], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_ask", "args": [["a", 1]], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_ask", "args": ["x"], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_ask", "args": [0], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_ask", "args": [{"a": "b"}], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_ask", "args": [[]], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_ask", "args": [{}], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_ask", "args": [{"zebra": 1, "apple": 2, "10": 3, "2": 4, "é": 5, "Apple": 6}], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_ask", "args": [{"n": 9007199254740993, "f": 1e+21, "t": 0.1, "neg": -7}], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_ask", "args": [[3, 1, 2]], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_reply", "args": [{"a": {"b": "c"}}], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_reply", "args": [[]], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_reply", "args": [true], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_reply", "args": [{}], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_reply", "args": [{"a": "b"}], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_reply", "args": ["x"], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_reply", "args": [["a", 1]], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_reply", "args": [null], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_reply", "args": [0], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_reply", "args": [{"zebra": 1, "apple": 2, "10": 3, "2": 4, "é": 5, "Apple": 6}], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_reply", "args": [{"n": 9007199254740993, "f": 1e+21, "t": 0.1, "neg": -7}], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_reply", "args": [[3, 1, 2]], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_research_send", "args": [null], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_research_send", "args": ["x"], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_research_send", "args": [["a", 1]], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_research_send", "args": [{}], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_research_send", "args": [{"a": {"b": "c"}}], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_research_send", "args": [{"a": "b"}], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_research_send", "args": [true], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_research_send", "args": [[]], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_research_send", "args": [0], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_research_send", "args": [{"zebra": 1, "apple": 2, "10": 3, "2": 4, "é": 5, "Apple": 6}], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_research_send", "args": [{"n": 9007199254740993, "f": 1e+21, "t": 0.1, "neg": -7}], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_research_send", "args": [[3, 1, 2]], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_research_check", "args": [{}], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_research_check", "args": ["x"], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_research_check", "args": [{"a": "b"}], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_research_check", "args": [["a", 1]], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_research_check", "args": [{"a": {"b": "c"}}], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_research_check", "args": [true], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_research_check", "args": [[]], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_research_check", "args": [0], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_research_check", "args": [null], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_research_check", "args": [{"zebra": 1, "apple": 2, "10": 3, "2": 4, "é": 5, "Apple": 6}], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_research_check", "args": [{"n": 9007199254740993, "f": 1e+21, "t": 0.1, "neg": -7}], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_research_check", "args": [[3, 1, 2]], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_research_get", "args": [{}], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_research_get", "args": ["x"], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_research_get", "args": [0], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_research_get", "args": [{"a": {"b": "c"}}], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_research_get", "args": [["a", 1]], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_research_get", "args": [null], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_research_get", "args": [{"a": "b"}], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_research_get", "args": [true], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_research_get", "args": [[]], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_research_get", "args": [{"zebra": 1, "apple": 2, "10": 3, "2": 4, "é": 5, "Apple": 6}], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_research_get", "args": [{"n": 9007199254740993, "f": 1e+21, "t": 0.1, "neg": -7}], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_research_get", "args": [[3, 1, 2]], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_models", "args": [["a", 1]], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_models", "args": [0], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_models", "args": [null], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_models", "args": ["x"], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_models", "args": [{"a": {"b": "c"}}], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_models", "args": [[]], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_models", "args": [{"a": "b"}], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_models", "args": [{}], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_models", "args": [true], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_models", "args": [{"zebra": 1, "apple": 2, "10": 3, "2": 4, "é": 5, "Apple": 6}], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_models", "args": [{"n": 9007199254740993, "f": 1e+21, "t": 0.1, "neg": -7}], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_models", "args": [[3, 1, 2]], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_list", "args": ["x"], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_list", "args": [0], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_list", "args": [["a", 1]], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_list", "args": [[]], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_list", "args": [{}], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_list", "args": [true], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_list", "args": [null], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_list", "args": [{"a": "b"}], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_list", "args": [{"a": {"b": "c"}}], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_list", "args": [{"zebra": 1, "apple": 2, "10": 3, "2": 4, "é": 5, "Apple": 6}], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_list", "args": [{"n": 9007199254740993, "f": 1e+21, "t": 0.1, "neg": -7}], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_list", "args": [[3, 1, 2]], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_read", "args": ["x"], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_read", "args": [0], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_read", "args": [["a", 1]], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_read", "args": [true], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_read", "args": [{"a": {"b": "c"}}], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_read", "args": [[]], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_read", "args": [null], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_read", "args": [{}], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_read", "args": [{"a": "b"}], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_read", "args": [{"zebra": 1, "apple": 2, "10": 3, "2": 4, "é": 5, "Apple": 6}], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_read", "args": [{"n": 9007199254740993, "f": 1e+21, "t": 0.1, "neg": -7}], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_read", "args": [[3, 1, 2]], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_download", "args": [{}], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_download", "args": [{"a": "b"}], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_download", "args": [[]], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_download", "args": ["x"], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_download", "args": [["a", 1]], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_download", "args": [0], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_download", "args": [{"a": {"b": "c"}}], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_download", "args": [null], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_download", "args": [true], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_download", "args": [{"zebra": 1, "apple": 2, "10": 3, "2": 4, "é": 5, "Apple": 6}], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_download", "args": [{"n": 9007199254740993, "f": 1e+21, "t": 0.1, "neg": -7}], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_download", "args": [[3, 1, 2]], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_inspect", "args": [["a", 1]], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_inspect", "args": ["x"], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_inspect", "args": [null], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_inspect", "args": [0], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_inspect", "args": [[]], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_inspect", "args": [true], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_inspect", "args": [{"a": "b"}], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_inspect", "args": [{}], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_inspect", "args": [{"a": {"b": "c"}}], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_inspect", "args": [{"zebra": 1, "apple": 2, "10": 3, "2": 4, "é": 5, "Apple": 6}], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_inspect", "args": [{"n": 9007199254740993, "f": 1e+21, "t": 0.1, "neg": -7}], "ok": {"$repr": "coroutine"}}
+{"fn": "cmd_inspect", "args": [[3, 1, 2]], "ok": {"$repr": "coroutine"}}
+{"fn": "run", "args": [{"a": {"b": "c"}}], "ok": {"$repr": "coroutine"}}
+{"fn": "run", "args": [0], "ok": {"$repr": "coroutine"}}
+{"fn": "run", "args": [true], "ok": {"$repr": "coroutine"}}
+{"fn": "run", "args": [["a", 1]], "ok": {"$repr": "coroutine"}}
+{"fn": "run", "args": [null], "ok": {"$repr": "coroutine"}}
+{"fn": "run", "args": [{"a": "b"}], "ok": {"$repr": "coroutine"}}
+{"fn": "run", "args": ["x"], "ok": {"$repr": "coroutine"}}
+{"fn": "run", "args": [{}], "ok": {"$repr": "coroutine"}}
+{"fn": "run", "args": [[]], "ok": {"$repr": "coroutine"}}
+{"fn": "run", "args": [{"zebra": 1, "apple": 2, "10": 3, "2": 4, "é": 5, "Apple": 6}], "ok": {"$repr": "coroutine"}}
+{"fn": "run", "args": [{"n": 9007199254740993, "f": 1e+21, "t": 0.1, "neg": -7}], "ok": {"$repr": "coroutine"}}
+{"fn": "run", "args": [[3, 1, 2]], "ok": {"$repr": "coroutine"}}

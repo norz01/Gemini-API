@@ -1,0 +1,181 @@
+{
+  "schema": "rust-anything/bridge@1",
+  "root": "/home/norz/projek/rust/Gemini-API",
+  "unit": "src/gemini_webapi/",
+  "language": "python",
+  "kind": "pyo3",
+  "crate_name": "gemini-webapi-rs",
+  "exports": [
+    {
+      "name": "build_model_header",
+      "file": "src/gemini_webapi/constants.py",
+      "line": 69,
+      "params": [
+        {
+          "name": "model_id",
+          "ts_type": "string",
+          "optional": false,
+          "rest": false
+        },
+        {
+          "name": "capacity_tail",
+          "ts_type": "string | int",
+          "optional": false,
+          "rest": false
+        },
+        {
+          "name": "model_number",
+          "ts_type": "int",
+          "optional": false,
+          "rest": false
+        }
+      ],
+      "returns": "Record<string, string>",
+      "is_async": false,
+      "is_generator": false,
+      "type_params": [],
+      "uses_instanceof": false
+    },
+    {
+      "name": "warn_deprecated_model",
+      "file": "src/gemini_webapi/constants.py",
+      "line": 176,
+      "params": [
+        {
+          "name": "usage",
+          "ts_type": "string",
+          "optional": false,
+          "rest": false
+        }
+      ],
+      "returns": "undefined",
+      "is_async": false,
+      "is_generator": false,
+      "type_params": [],
+      "uses_instanceof": false
+    },
+    {
+      "name": "format_http_version",
+      "file": "src/gemini_webapi/constants.py",
+      "line": 360,
+      "params": [
+        {
+          "name": "version_int",
+          "ts_type": "int",
+          "optional": false,
+          "rest": false
+        }
+      ],
+      "returns": "string",
+      "is_async": false,
+      "is_generator": false,
+      "type_params": [],
+      "uses_instanceof": false
+    }
+  ],
+  "classes": [],
+  "js_only": [
+    {
+      "name": "GeminiClient",
+      "file": "src/gemini_webapi/client.py",
+      "line": 94,
+      "reason": "class: `@cookies.setter` method `cookies`, `@property` method `abuse_status`, `@property` method `cookies`, `@property` method `quotas`, `@property` method `usage_info`, async or generator method `close`, async or generator method `generate_content_stream`, async or generator method `generate_content`, async or generator method `init`, async or generator method `reset_close_task`, async or generator method `start_activity_watchdog`, async or generator method `start_auto_refresh`, inherits from ChatMixin, GemMixin, ResearchMixin, public attribute `access_token`, public attribute `account_status`, public attribute `activity_task`, public attribute `auto_close`, public attribute `auto_refresh`, public attribute `build_label`, public attribute `client`, public attribute `close_delay`, public attribute `close_task`, public attribute `impersonate`, public attribute `kwargs`, public attribute `language`, public attribute `last_activity_time`, public attribute `proxy`, public attribute `push_id`, public attribute `refresh_interval`, public attribute `refresh_task`, public attribute `session_id`, public attribute `timeout`, public attribute `verbose`, public attribute `watchdog_timeout`, takes `**kwargs`"
+    },
+    {
+      "name": "ChatSession",
+      "file": "src/gemini_webapi/client.py",
+      "line": 2396,
+      "reason": "class: `@cid.setter` method `cid`, `@metadata.setter` method `metadata`, `@property` method `cid`, `@property` method `metadata`, `@property` method `rcid`, `@property` method `rid`, `@rcid.setter` method `rcid`, `@rid.setter` method `rid`, async or generator method `read_history`, async or generator method `send_message_stream`, async or generator method `send_message`, public attribute `cid`, public attribute `gem`, public attribute `geminiclient`, public attribute `last_output`, public attribute `metadata`, public attribute `model`, public attribute `rcid`, public attribute `rid`, special method `__setattr__`, special method `__str__`"
+    },
+    {
+      "name": "Field",
+      "file": "src/gemini_webapi/constants.py",
+      "line": 15,
+      "reason": "class: inherits from IntEnum, public class attribute `CITATIONS`, public class attribute `GENERATED_IMAGES`, public class attribute `MEDIA`, public class attribute `PROGRESS`, public class attribute `RESEARCH_PLAN_ALT`, public class attribute `RESEARCH_PLAN_STATE`, public class attribute `RESEARCH_PLAN`, public class attribute `VIDEO`, public class attribute `WEB_IMAGES`"
+    },
+    {
+      "name": "Endpoint",
+      "file": "src/gemini_webapi/constants.py",
+      "line": 80,
+      "reason": "class: inherits from StrEnum, public class attribute `BATCH_EXEC`, public class attribute `GENERATE`, public class attribute `GOOGLE`, public class attribute `INIT`, public class attribute `ROTATE_COOKIES`, public class attribute `UPLOAD`"
+    },
+    {
+      "name": "GRPC",
+      "file": "src/gemini_webapi/constants.py",
+      "line": 89,
+      "reason": "class: inherits from StrEnum, public class attribute `CHECK_GEMINI_QUOTA`, public class attribute `CHECK_QUOTA`, public class attribute `CONTINUE_SHARED_CONVERSATION`, public class attribute `CREATE_BOT`, public class attribute `CREATE_MEMORY`, public class attribute `CREATE_TASK`, public class attribute `DELETE_ALL_MEMORIES`, public class attribute `DELETE_BOT_AND_CONVERSATIONS`, public class attribute `DELETE_BOT`, public class attribute `DELETE_CONVERSATION`, public class attribute `DELETE_GEMINI_APP_ARTIFACTS`, public class attribute `DELETE_MEMORY`, public class attribute `DOWNLOAD_GENERATED_IMAGE`, public class attribute `GENERATE_HEADLINE`, public class attribute `GET_ABUSE_STATUS`, public class attribute `GET_ALL_TASKS`, public class attribute `GET_BOT`, public class attribute `GET_CANDIDATES`, public class attribute `GET_CONVERSATION_TURN`, public class attribute `GET_DISCOVERY_CARD`, public class attribute `GET_TASKS_IN_CONVERSATION`, public class attribute `GET_TASK`, public class attribute `GET_USAGE_INFO`, public class attribute `GET_USER_STATUS`, public class attribute `LIST_BOTS`, public class attribute `LIST_CONVERSATIONS`, public class attribute `LIST_CONVERSATION_TURNS`, public class attribute `LIST_DISCOVERY_BANNERS`, public class attribute `LIST_DISCOVERY_CARDS`, public class attribute `LIST_GEMINI_APP_ARTIFACTS`, public class attribute `LIST_MEMORIES`, public class attribute `MARK_LAST_CONVERSATION_TURN`, public class attribute `READ_USER_PREFERENCES`, public class attribute `UPDATE_BOT_METADATA`, public class attribute `UPDATE_CONVERSATION`, public class attribute `UPDATE_MEMORY`, public class attribute `UPDATE_USER_PREFERENCES`"
+    },
+    {
+      "name": "Headers",
+      "file": "src/gemini_webapi/constants.py",
+      "line": 166,
+      "reason": "class: inherits from Enum, public class attribute `BATCH_EXEC`, public class attribute `GEMINI`, public class attribute `REFERER`, public class attribute `ROTATE_COOKIES`, public class attribute `SAME_DOMAIN`, public class attribute `UPLOAD`"
+    },
+    {
+      "name": "Model",
+      "file": "src/gemini_webapi/constants.py",
+      "line": 185,
+      "reason": "class: `@property` method `model_id`, inherits from Enum, public attribute `advanced_only`, public attribute `model_header`, public attribute `model_name`, public class attribute `ADVANCED_FLASH`, public class attribute `ADVANCED_LITE`, public class attribute `ADVANCED_PRO`, public class attribute `BASIC_FLASH`, public class attribute `BASIC_LITE`, public class attribute `BASIC_PRO`, public class attribute `PLUS_FLASH`, public class attribute `PLUS_LITE`, public class attribute `PLUS_PRO`, public class attribute `UNSPECIFIED`"
+    },
+    {
+      "name": "AccountStatus",
+      "file": "src/gemini_webapi/constants.py",
+      "line": 266,
+      "reason": "class: `@classmethod` method `from_status_code`, inherits from IntEnum, public class attribute `ACCESS_TEMPORARILY_UNAVAILABLE`, public class attribute `ACCOUNT_REJECTED_BY_GUARDIAN`, public class attribute `ACCOUNT_REJECTED`, public class attribute `ACCOUNT_UNTRUSTED`, public class attribute `AVAILABLE`, public class attribute `GUARDIAN_APPROVAL_REQUIRED`, public class attribute `LOCATION_REJECTED`, public class attribute `TOS_OUT_OF_DATE`, public class attribute `TOS_PENDING`, public class attribute `UNAUTHENTICATED`, public class attribute `description`, special method `__new__`"
+    },
+    {
+      "name": "ErrorCode",
+      "file": "src/gemini_webapi/constants.py",
+      "line": 348,
+      "reason": "class: inherits from IntEnum, public class attribute `IP_TEMPORARILY_BLOCKED`, public class attribute `MODEL_HEADER_INVALID`, public class attribute `MODEL_INCONSISTENT`, public class attribute `TEMPORARY_ERROR_1013`, public class attribute `USAGE_LIMIT_EXCEEDED`"
+    },
+    {
+      "name": "AuthError",
+      "file": "src/gemini_webapi/exceptions.py",
+      "line": 4,
+      "reason": "class: inherits from Exception"
+    },
+    {
+      "name": "APIError",
+      "file": "src/gemini_webapi/exceptions.py",
+      "line": 8,
+      "reason": "class: inherits from Exception, public attribute `response`, public attribute `status_code`"
+    },
+    {
+      "name": "ImageGenerationError",
+      "file": "src/gemini_webapi/exceptions.py",
+      "line": 22,
+      "reason": "class: inherits from APIError"
+    },
+    {
+      "name": "GeminiError",
+      "file": "src/gemini_webapi/exceptions.py",
+      "line": 26,
+      "reason": "class: inherits from Exception"
+    },
+    {
+      "name": "TimeoutError",
+      "file": "src/gemini_webapi/exceptions.py",
+      "line": 30,
+      "reason": "class: inherits from GeminiError"
+    },
+    {
+      "name": "UsageLimitExceededError",
+      "file": "src/gemini_webapi/exceptions.py",
+      "line": 34,
+      "reason": "class: inherits from GeminiError"
+    },
+    {
+      "name": "ModelInvalidError",
+      "file": "src/gemini_webapi/exceptions.py",
+      "line": 38,
+      "reason": "class: inherits from GeminiError"
+    },
+    {
+      "name": "TemporarilyBlockedError",
+      "file": "src/gemini_webapi/exceptions.py",
+      "line": 42,
+      "reason": "class: inherits from GeminiError"
+    }
+  ]
+}
