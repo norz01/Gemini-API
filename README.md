@@ -843,6 +843,57 @@ python cli.py --cookies-json cookies.json research get c_abc123
 python cli.py --cookies-json cookies.json research get c_abc123 --output report.md
 ```
 
+## Rust Port
+
+A pure Rust port of the CLI is available in the `rust/` directory. It is a standalone binary that replaces `python cli.py` with no Python dependency. The port was done with [rust-anything](https://github.com/erkamyaman/rust-anything), keeping the original Python code only as reference.
+
+### Installation
+
+Build from source with Cargo (Rust 1.85+):
+
+```sh
+cd rust/app
+cargo build --release
+```
+
+The binary is produced at `rust/app/target/release/cli`. You can copy it anywhere on your `PATH`.
+
+### Usage
+
+The Rust CLI accepts the same commands, flags, and cookie file format as `python cli.py`. Replace `python cli.py` with the built `cli` binary:
+
+```sh
+# Ask a single question (streams by default)
+./cli --cookies-json cookies.json ask "What is quantum computing?"
+
+# Non-streaming mode
+./cli --cookies-json cookies.json ask --no-stream "Hello"
+
+# Continue a conversation
+./cli --cookies-json cookies.json reply c_abc123 "Tell me more"
+
+# List your chat history
+./cli --cookies-json cookies.json list
+
+# Read a specific chat
+./cli --cookies-json cookies.json read c_abc123
+
+# List available models
+./cli --cookies-json cookies.json models
+
+# Account diagnostics
+./cli --cookies-json cookies.json inspect
+
+# Deep research workflow
+./cli --cookies-json cookies.json research send --prompt "AI chip competition 2025"
+./cli --cookies-json cookies.json research check c_abc123
+./cli --cookies-json cookies.json research get c_abc123 --output report.md
+```
+
+**Global options:** `--cookies-json`, `--proxy`, `--account-index`, `--model`, `--verbose`, `--no-persist`, `--request-timeout`, `--skip-verify` — identical to the Python CLI.
+
+The original Python `cli.py` is retained in the repository as reference only.
+
 ## References
 
 [Google AI Studio](https://ai.google.dev/tutorials/ai-studio_quickstart)
